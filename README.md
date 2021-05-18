@@ -22,7 +22,7 @@ El repositorio contiene todo lo necesario para desplegar el sistema de manera lo
 
 3. Instalación de MongoDB Server. [URL](https://www.mongodb.com/try/download/community?tck=docs_server)
 
-4. Instalación del cliente MongoDB Composer. [URL]https://www.mongodb.com/try/download/compass)
+4. Instalación del cliente MongoDB Composer. [URL](https://www.mongodb.com/try/download/compass)
 
 5. Instalación del paquete XAMPP para el servicio web de comentarios PHP. [URL](https://www.apachefriends.org/download.html)
 
@@ -37,8 +37,8 @@ Ejemplo para la construir la imagen del servicio del bot, a ejecutar en terminal
    ```sh
    Docker network create -–subnet=192.168.50.0/24 mynet
    ```  
-3. Instanciación contenedores
-   Ejecución de los contenedores, ejemplo para el servicio del bot.
+3. Instanciación contenedores.
+    Ejecución de los contenedores, ejemplo para el servicio del bot.
    ```sh
    docker run -d --name=qr-bot --net=mynet --ip=192.168.50.10 bot
    ```  
