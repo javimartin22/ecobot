@@ -69,11 +69,10 @@ Sitio web que contiene una página para cada pregunta que envía el bot. En esta
 ![image](https://user-images.githubusercontent.com/43879255/118670711-245fdf00-b7f7-11eb-8442-5badd6d85eef.png)
 
 <!-- CONTRIBUTING -->
-## Autor y dirección✒️
-* Alumno: Javier Martín Aizpuru
+## Autor✒️
+Javier Martín Aizpuru
 
-* Tutor: Diego Casado Mansilla 
-* Equipo: Cruz Enrique Borges Hernández
+
 
 
 <!-- BIBLIOGRAFIA -->
