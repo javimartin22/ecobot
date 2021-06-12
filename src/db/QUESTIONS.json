@@ -1,0 +1,715 @@
+[{
+  "_id": {
+    "$oid": "6081b37a70a6f7bb6c2e179d"
+  },
+  "question-eng": "Why do you use it now?",
+  "question-esp": "¿Por qué lo usas ahora?",
+  "question-eusk": "Zergatik erabiltzen duzu orain?",
+  "postID": "1",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "air_conditioner",
+    "cooking_appliance",
+    "dishwasher",
+    "heater",
+    "light",
+    "bulb",
+    "lamp",
+    "space_heater",
+    "fridge",
+    "freezer",
+    "electronic_display",
+    "display",
+    "television",
+    "lcd",
+    "tv",
+    "screen",
+    "tumble_drier",
+    "ventilation_unit",
+    "ventilation",
+    "washing_machine",
+    "ev_charger",
+    "car_charger",
+    "bike_charger",
+    "motorbike_charger"
+  ],
+  "options-eng": [],
+  "options-esp": [],
+  "options-eusk": [],
+  "state": "red"
+},{
+  "_id": {
+    "$oid": "6081b3afd773024ddc46bbca"
+  },
+  "question-eng": "Would you shift this load to another time if it was cheaper/cleaner?",
+  "question-esp": "¿Cambiaría esta carga a otro momento si fuera más barata / más limpia?",
+  "question-eusk": "Karga hori beste une batera aldatuko zenuke merkeagoa edo garbiagoa balitz?",
+  "postID": "2",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "ev_charger",
+    "car_charger",
+    "bike_charger",
+    "motorbike_charger"
+  ],
+  "options-eng": [
+    "YES",
+    "No",
+    "No, I need it now",
+    "Uncertain"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No, lo necesito ahora",
+    "No estoy seguro"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Ez, orain behar dut",
+    "Ez nago ziur"
+  ],
+  "state": "red"
+},{
+  "_id": {
+    "$oid": "6081b3e2d773024ddc46bbcb"
+  },
+  "question-eng": "Can you avoid using it now?",
+  "question-esp": "¿Puedes evitar usarlo ahora?",
+  "question-eusk": "Saihestu dezakezu orain erabiltzea?",
+  "postID": "3",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "air_conditioner",
+    "cooking_appliance",
+    "dishwasher",
+    "heater",
+    "light",
+    "bulb",
+    "lamp",
+    "space_heater",
+    "electronic_display",
+    "display",
+    "television",
+    "lcd",
+    "tv",
+    "screen",
+    "tumble_drier",
+    "washing_machine",
+    "ev_charger",
+    "car_charger",
+    "bike_charger",
+    "motorbike_charger"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "Uncertain"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No estoy seguro"
+  ],
+  "options-eusk": [],
+  "state": "red"
+},{
+  "_id": {
+    "$oid": "6081b3f7d773024ddc46bbcc"
+  },
+  "question-eng": "Are you aware of the consumption that it draws?",
+  "question-esp": "¿Eres consciente del consumo que representa?",
+  "question-eusk": "Badakizu zer kontsumo den?",
+  "postID": "4",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "air_conditioner",
+    "cooking_appliance",
+    "dishwasher",
+    "heater",
+    "light",
+    "bulb",
+    "lamp",
+    "space_heater",
+    "fridge",
+    "freezer",
+    "electronic_display",
+    "display",
+    "television",
+    "lcd",
+    "tv",
+    "screen",
+    "tumble_drier",
+    "ventilation_unit",
+    "ventilation",
+    "washing_machine",
+    "ev_charger",
+    "car_charger",
+    "bike_charger",
+    "motorbike_charger"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "Uncertain"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No sé"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Ez dakit"
+  ],
+  "state": "orange"
+},{
+  "_id": {
+    "$oid": "6081b411d773024ddc46bbcd"
+  },
+  "question-eng": "Are you aware of the impact that its consumption has on the environment (e.g. equivalences such as those: https://www.rensmart.com/Calculators/KWH-to-CO2)?",
+  "question-esp": "¿Eres consciente del impacto medioambiental que supone este consumo?",
+  "question-eusk": "Badakizu kontsumo horrek ingurumenean duen eraginaz?",
+  "postID": "5",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "air_conditioner",
+    "cooking_appliance",
+    "dishwasher",
+    "heater",
+    "light",
+    "bulb",
+    "lamp",
+    "space_heater",
+    "fridge",
+    "freezer",
+    "electronic_display",
+    "display",
+    "television",
+    "lcd",
+    "tv",
+    "screen",
+    "tumble_drier",
+    "ventilation_unit",
+    "ventilation",
+    "washing_machine",
+    "ev_charger",
+    "car_charger",
+    "bike_charger",
+    "motorbike_charger"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "Uncertain"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No sé"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Ez dakit"
+  ],
+  "state": "orange"
+},{
+  "_id": {
+    "$oid": "6081b429d773024ddc46bbce"
+  },
+  "question-eng": "Have you unplugged/switched off?",
+  "question-esp": "¿Lo has desenchufado o apagado?",
+  "question-eusk": "Desentxufatu edo itzali duzu?",
+  "postID": "6",
+  "load_type": [
+    "heavy",
+    "light"
+  ],
+  "supported_appliances": [
+    "cooking_appliance",
+    "light",
+    "bulb",
+    "lamp",
+    "space_heater",
+    "electronic_display",
+    "display",
+    "television",
+    "lcd",
+    "tv",
+    "screen"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "Uncertain"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No sé"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Ez dakit"
+  ],
+  "state": "orange"
+},{
+  "_id": {
+    "$oid": "6081b482d773024ddc46bbcf"
+  },
+  "question-eng": "Have you tried to reduce/increase the temperature?",
+  "question-esp": "¿Has tratado de reducir o aumentar la temperatura?",
+  "question-eusk": "Tenperatura jaisten edo handitzen saiatu zara?",
+  "postID": "7",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "air_conditioner",
+    "dishwasher",
+    "heater",
+    "fridge",
+    "freezer",
+    "washing_machine"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "No, I can not"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No puedo"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Ezin naiz saiatu"
+  ],
+  "state": "orange"
+},{
+  "_id": {
+    "$oid": "6081b495d773024ddc46bbd0"
+  },
+  "question-eng": "Have you used it full load?",
+  "question-esp": "¿Lo has usado con la carga llena?",
+  "question-eusk": "Karga beteta erabili duzu?",
+  "postID": "8",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "dishwasher",
+    "tumble_drier",
+    "washing_machine"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "No, I need it now"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No, lo necesito ahora"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Ez, orain behar dut"
+  ],
+  "state": "red"
+},{
+  "_id": {
+    "$oid": "6081b4a9d773024ddc46bbd1"
+  },
+  "question-eng": "Is the thermostat correctly programmed?",
+  "question-esp": "¿El termostato está programado correctamente?",
+  "question-eusk": "Termostatoa ondo programatuta dago?",
+  "postID": "9",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "air_conditioner",
+    "heater",
+    "space_heater",
+    "fridge",
+    "freezer",
+    "ventilation_unit",
+    "ventilation"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "I do not know",
+    "It cannot be done",
+    "I manually control it"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No lo sé",
+    "No es posible",
+    "Lo controlo manualmente"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Ez dakit",
+    "Ezinezkoa da",
+    "Eskuz kontrolatzen dut"
+  ],
+  "state": "orange"
+},{
+  "_id": {
+    "$oid": "6081b4bdd773024ddc46bbd2"
+  },
+  "question-eng": "Do you keep the water heater (for bath or coffee, etc) always on?",
+  "question-esp": "¿Mantienes el calentador de agua siempre encendido?(para baño, café…)",
+  "question-eusk": "Ur-berogailua beti piztuta izaten duzu?",
+  "postID": "10",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "cooking_appliance",
+    "heater"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "It is externally controlled",
+    "I do not know"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "Se controla externamente",
+    "No lo sé"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Kanpotik kontrolatzen da"
+  ],
+  "state": "orange"
+},{
+  "_id": {
+    "$oid": "6081b4d6d773024ddc46bbd3"
+  },
+  "question-eng": "Have you covered the pots?",
+  "question-esp": "¿Has tapado las ollas/cazuelas?",
+  "question-eusk": "Lapikoak/Eltzeak estali dituzu?",
+  "postID": "11",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "cooking_appliance"
+  ],
+  "options-eng": [
+    "Yes",
+    "No"
+  ],
+  "options-esp": [
+    "Si",
+    "No"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez"
+  ],
+  "state": "green"
+},{
+  "_id": {
+    "$oid": "6081b4e7d773024ddc46bbd4"
+  },
+  "question-eng": "Have you used the right pot size for the hob used to cook?",
+  "question-esp": "¿Has utilizado el tamaño de olla adecuado para la placa de cocción utilizada para cocinar?",
+  "question-eusk": "Erabili al duzu eltzearen tamaina egokia sukaldean erabiltzeko plakarako?",
+  "postID": "12",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "cooking_appliance"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "No, I do not have another option"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No, no tengo otra opción"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Ez daukat beste aukerarik"
+  ],
+  "state": "green"
+},{
+  "_id": {
+    "$oid": "6081b4fbd773024ddc46bbd5"
+  },
+  "question-eng": "Why have you used the tumble drier instead of hang drying?",
+  "question-esp": "¿Por qué has utilizado el secador en vez de colgar?",
+  "question-eusk": "Zergatik erabili duzu lehorgailua eseki beharrean?",
+  "postID": "13",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "tumble_drier"
+  ],
+  "options-eng": [
+    "It is more confortable",
+    "I do not have space for line drier",
+    "It is faster",
+    "The weather is bad (rain/cold)"
+  ],
+  "options-esp": [
+    "Es más comod",
+    "No tengo espacio en el colgador",
+    "Es más rápido",
+    "Mal tiempo"
+  ],
+  "options-eusk": [
+    "Erosoagoa da",
+    "Esekitokian ez dut lekurik",
+    "Azkarragoa da",
+    "Eguraldi txarra"
+  ],
+  "state": "green"
+},{
+  "_id": {
+    "$oid": "6081b511d773024ddc46bbd6"
+  },
+  "question-eng": "Have you cleaned the filters lately?",
+  "question-esp": "¿Has limpiado los filtros últimamente?",
+  "question-eusk": "Garbitu al dituzu iragazkiak azkenaldian?",
+  "postID": "14",
+  "load_type": [
+    "heavy",
+    "light"
+  ],
+  "supported_appliances": [
+    "air_conditioner",
+    "dishwasher",
+    "fridge",
+    "freezer",
+    "tumble_drier",
+    "ventilation_unit",
+    "ventilation",
+    "washing_machine"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "What are you talking about?"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "¿De qué estas hablando?"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Zertaz ari zara?"
+  ],
+  "state": "green"
+},{
+  "_id": {
+    "$oid": "6081b524d773024ddc46bbd7"
+  },
+  "question-eng": "Could you have used a microwave oven instead?",
+  "question-esp": "¿Podrías haber usado un microondas en su lugar?",
+  "question-eusk": "Mikrouhin labe bat erabil zenezakeen haren ordez?",
+  "postID": "15",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "cooking_appliance"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "I do not have one"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No tengo uno"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Ez daukat bat ere"
+  ],
+  "state": "green"
+},{
+  "_id": {
+    "$oid": "6081b539d773024ddc46bbd8"
+  },
+  "question-eng": "Could you have turned down the heat (below pot/pan or in oven) a minute earlier to finish cooking?",
+  "question-esp": "¿Podrías haber bajado el fuego (de la olla / sartén o  horno) un minuto antes de terminar de cocinar?",
+  "question-eusk": "Janaria prestatzen amaitu baino minutu bat lehenago jaits zenezake sua (eltzetik / zartaginetik edo labetik)?",
+  "postID": "16",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "cooking_appliance"
+  ],
+  "options-eng": [
+    "Yes",
+    "Yes, and I did",
+    "No, it's not possible",
+    "No, I forgot",
+    "No (other reason)"
+  ],
+  "options-esp": [
+    "Si",
+    "Si, y lo hice",
+    "No, no es posible",
+    "No, se me ha olvidado",
+    "No (otra razón)"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Bai eta egin nuen",
+    "Ezin da",
+    "Ez, ahaztu zait",
+    "Ez (beste arrazoi)"
+  ],
+  "state": "orange"
+},{
+  "_id": {
+    "$oid": "6081b54bd773024ddc46bbd9"
+  },
+  "question-eng": "Are the bulbs of type LED?",
+  "question-esp": "¿Las bombillas son de tipo LED?",
+  "question-eusk": "Bonbillak LED motakoak dira?",
+  "postID": "17",
+  "load_type": "light",
+  "supported_appliances": [
+    "light",
+    "bulb",
+    "lamp"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "I do not know"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No lo sé"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Ez dakit"
+  ],
+  "state": [
+    "green",
+    "orange",
+    "red"
+  ]
+},{
+  "_id": {
+    "$oid": "6081b563d773024ddc46bbda"
+  },
+  "question-eng": "Is it possible to use it in a Eco mode?",
+  "question-esp": "¿Es posible usarlo en un modo ECO?",
+  "question-eusk": "ECO moduan erabil daiteke?",
+  "postID": "18",
+  "load_type": "heavy",
+  "supported_appliances": [
+    "dishwasher",
+    "tumble_drier",
+    "washing_machine"
+  ],
+  "options-eng": [
+    "Yes",
+    "No",
+    "I do not know"
+  ],
+  "options-esp": [
+    "Si",
+    "No",
+    "No lo sé"
+  ],
+  "options-eusk": [
+    "Bai",
+    "Ez",
+    "Ez dakit"
+  ],
+  "state": "green"
+},{
+  "_id": {
+    "$oid": "6081b573d773024ddc46bbdb"
+  },
+  "question-eng": "What energy label does this appliance be?",
+  "question-esp": "¿Qué etiqueta de calificación energética tiene este electrodoméstico?",
+  "question-eusk": "Zer energia-kalifikazio du etxetresna elektriko horrek?",
+  "postID": "19",
+  "load_type": [
+    "heavy",
+    "light"
+  ],
+  "supported_appliances": [
+    "air_conditioner",
+    "cooking_appliance",
+    "dishwasher",
+    "heater",
+    "light",
+    "bulb",
+    "lamp",
+    "space_heater",
+    "fridge",
+    "freezer",
+    "electronic_display",
+    "display",
+    "television",
+    "lcd",
+    "tv",
+    "screen",
+    "tumble_drier",
+    "ventilation_unit",
+    "ventilation",
+    "washing_machine",
+    "ev_charger",
+    "car_charger",
+    "bike_charger",
+    "motorbike_charger"
+  ],
+  "options-eng": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "I do not know"
+  ],
+  "options-esp": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "No lo sé"
+  ],
+  "options-eusk": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "Ez dakit"
+  ],
+  "state": [
+    "green",
+    "orange",
+    "red"
+  ]
+}]

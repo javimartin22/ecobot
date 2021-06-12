@@ -7,11 +7,14 @@ import pymongo
 import sys
 
 app = flask.Flask(__name__)
+db_url="mongodb://host.docker.internal:27017/"
+
+
 
 @app.route('/log', methods=['POST'])
 def log():
     data = request.json
-    myclient = pymongo.MongoClient("mongodb://host.docker.internal:27017/")
+    myclient = pymongo.MongoClient(db_url)
     mydb = myclient["QR_DATA"]
     mycol = mydb["QR_LOGS"]
     mycol.insert_one(data)
@@ -22,10 +25,9 @@ def saveUser():
     data = request.json
     key = {'chat_id':data['chat_id']}
     update={ "$set" : data }
-    myclient = pymongo.MongoClient("mongodb://host.docker.internal:27017/")
+    myclient = pymongo.MongoClient(db_url)
     mydb = myclient["QR_DATA"]
     mycol = mydb["USERS"]
-    #mycol.insert_one(data)
     mycol.update(key, update, upsert=True);
     return 'Done'
 
@@ -33,7 +35,7 @@ def saveUser():
 def saveAnswer():
     data = request.json
     key = {'chat_id':data['chat_id']}
-    myclient = pymongo.MongoClient("mongodb://host.docker.internal:27017/")
+    myclient = pymongo.MongoClient(db_url)
     mydb = myclient["QR_DATA"]
     mycol = mydb["ANSWERS"]
     mycol.insert_one(data)
@@ -43,7 +45,7 @@ def saveAnswer():
 def saveTextAnswer():
     data = request.json
     key = {'chat_id':data['chat_id']}
-    myclient = pymongo.MongoClient("mongodb://host.docker.internal:27017/")
+    myclient = pymongo.MongoClient(db_url)
     mydb = myclient["QR_DATA"]
     mycol = mydb["USERS"]
     user = mycol.find(key)

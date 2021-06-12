@@ -33,17 +33,17 @@ today23 = time_now.replace(hour=23, minute=0, second=0, microsecond=0)
 today00 = time_now.replace(hour=00, minute=0, second=0, microsecond=0)
 
 with ruleset('time'):
-    @when_any((m.time >= str(today00)) and (m.time <= str(today08)))
+    @when_any((m.time >= str(today00)) & (m.time <= str(today08)))
     def green(c):
         global state
         state='green'
         
-    @when_any(((m.time > str(today08)) and (m.time <= str(today10))),((m.time > str(today14)) and (m.time <= str(today18))),(m.time > str(today22)))
+    @when_any(((m.time > str(today08)) & (m.time <= str(today10)))|((m.time > str(today14)) & (m.time <= str(today18)))|(m.time > str(today22)))
     def orange(c):
         global state
         state='orange'
         
-    @when_any(((m.time >= str(today10)) and (m.time <= str(today14))),((m.time >= str(today18)) and (m.time <= str(today22))))
+    @when_any(((m.time >= str(today10)) & (m.time <= str(today14)))|((m.time >= str(today18)) & (m.time <= str(today22))))
     def red(c):
         global state
         state='red'
@@ -54,50 +54,62 @@ def match_complete_callback(e, state):
 with ruleset('electronics'):
     @when_all((m.type == 'air_conditioner'))
     def air_conditioner(c):
+        c.m['load']='heavy'
         finish_callback(c.m)
 
     @when_all((m.type == 'cooking_appliance'))
     def cooking_appliance(c):
+        c.m['load']='heavy'
         finish_callback(c.m)
 
     @when_all((m.type == 'dishwasher'))
     def dishwasher(c):
+        c.m['load']='heavy'
         finish_callback(c.m)
 
     @when_all((m.type == 'heater'))
     def heater(c):
+        c.m['load']='heavy'
         finish_callback(c.m)
 
-    @when_any((m.type == 'light'),(m.type == 'bulb'),(m.type == 'lamp'))
+    @when_any((m.type == 'light')|( m.type == 'bulb')|(m.type == 'lamp'))
     def light_bulb_lamp(c):
+        c.m['load']='light'
         finish_callback(c.m)
 
     @when_all((m.type == 'space_heater'))
     def space_heater(c):
+        c.m['load']='heavy'
         finish_callback(c.m)
         
-    @when_any((m.type == 'fridge'),(m.type == 'freezer'))
+    @when_any((m.type == 'fridge')|(m.type == 'freezer'))
     def fridge_freezer(c):
+        c.m['load']='light'
         finish_callback(c.m)
 
-    @when_any((m.type == 'electronic_display'),(m.type == 'display'),(m.type == 'television'),(m.type == 'lcd'),(m.type == 'tv'),(m.type == 'screen'))
+    @when_any((m.type == 'electronic_display')|(m.type == 'display')|(m.type == 'television')|(m.type == 'lcd')|(m.type == 'tv')|(m.type == 'screen'))
     def screens(c):
+        c.m['load']='light'
         finish_callback(c.m)
 
     @when_all((m.type == 'tumble_drier'))
     def tumble_drier(c):
+        c.m['load']='heavy'
         finish_callback(c.m)
 
-    @when_all((m.type == 'ventilation_unit'),(m.type == 'ventilation'))
+    @when_all((m.type == 'ventilation_unit')|(m.type == 'ventilation'))
     def ventilation(c):
+        c.m['load']='heavy'
         finish_callback(c.m)
 
     @when_all((m.type == 'washing_machine'))
     def washing_machine(c):
+        c.m['load']='heavy'
         finish_callback(c.m)
 
-    @when_all((m.type == 'ev_charger'),(m.type == 'car_charger'),(m.type == 'bike_charger'),(m.type == 'motorbike_charger'))
+    @when_all((m.type == 'ev_charger')|(m.type == 'car_charger')|(m.type == 'bike_charger')|(m.type == 'motorbike_charger'))
     def charger(c):
+        c.m['load']='heavy'
         finish_callback(c.m)
 
     @when_all(+m.type)
@@ -117,7 +129,9 @@ def finish_callback(message):
             myquery = { "chat_id": message.chat_id}
             user=list(USERS.find(myquery))
             myquery = { "supported_appliances": message.type,
-                        "state":state }
+                        "state":state,
+                        "load_type":message.load
+                        }
             res=list(QUESTIONS.find(myquery))
 
             post=res[random.randint(0,len(res)-1)]

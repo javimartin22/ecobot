@@ -17,9 +17,7 @@ log_url = 'http://192.168.50.10:5003/log'
 user_save_url = 'http://192.168.50.10:5003/saveUser'
 answer_save_url = 'http://192.168.50.10:5003/saveAnswer'
 text_answer_save_url = 'http://192.168.50.10:5003/saveTextAnswer'
-
 qr_decode_url = 'http://192.168.50.11:5001/qr_decode'
-
 ques_url = 'http://192.168.50.12:5002/getQuestion'
 
 
@@ -103,19 +101,35 @@ def setLanguage(update: Update, context: CallbackContext):
         query.answer()
         choice = query.data
         print(query)
-        user={"chat_id":query.message.chat.id,
-              "first_name":query.message.chat.first_name,
-              "last_name":query.message.chat.last_name,
-              "username":query.message.chat.username
+        chat_id=query.message.chat.id
+        if query.message.chat.first_name:
+                first_name=query.message.chat.first_name
+        else:
+                first_name=""
+
+        if query.message.chat.last_name:
+                last_name=query.message.chat.last_name
+        else:
+                last_name=""
+        
+        if query.message.chat.username:
+                username=query.message.chat.username
+        else:
+                username=""
+        
+        user={"chat_id":chat_id,
+              "first_name":first_name,
+              "last_name":last_name,
+              "username":username
               }
         if choice == "set-lang-eng":
-                reply_msg="Welcome "+query.message.chat.first_name+" "+query.message.chat.last_name+"!\nEnglish is your default language now.\nThis is Javi's QR Bot.\nPlease send a photo of QR code to me.\nSelect /langSetup to change language."
+                reply_msg="Welcome "+first_name+" "+last_name+"!\nEnglish is your default language now.\nThis is Javi's QR Bot.\nPlease send a photo of QR code to me.\nSelect /langSetup to change language."
                 user['language']='eng'
         elif choice == "set-lang-esp":
-                reply_msg="Bienvenidos "+query.message.chat.first_name+" "+query.message.chat.last_name+"!\nEl español es su idioma predeterminado ahora.\nEste es el QR bot de Javi.\nPor favor envíeme una foto del código QR.\nSeleccione / langSetup para cambiar el idioma."
+                reply_msg="Bienvenidos "+first_name+" "+last_name+"!\nEl español es su idioma predeterminado ahora.\nEste es el QR bot de Javi.\nPor favor envíeme una foto del código QR.\nSeleccione /langSetup para cambiar el idioma."
                 user['language']='esp'
         elif choice == "set-lang-eusk":
-                reply_msg="Ongi etorri "+query.message.chat.first_name+" "+query.message.chat.last_name+"!\nEuskara da zure hizkuntza lehenetsia orain.\nHau da javiren QR bot-a.\nMesedez, bidali QR kodearen argazkia.\nAukeratu /langSetup hizkuntza aldatzeko."
+                reply_msg="Ongi etorri "+first_name+" "+last_name+"!\nEuskara da zure hizkuntza lehenetsia orain.\nHau da javiren QR bot-a.\nMesedez, bidali QR kodearen argazkia.\nAukeratu /langSetup hizkuntza aldatzeko."
                 user['language']='eusk'
         user['last-question']='none'
         try:
